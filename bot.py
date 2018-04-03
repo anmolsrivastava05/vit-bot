@@ -17,7 +17,7 @@ chatterbot.set_trainer(ListTrainer)
 
 question = ''
 # Get a response to an input statement
-while(question!="bye"):
+while(question.lower()!="bye"):
 	#Ask a question
 	question = raw_input('You: ')
 	response = chatbot.get_response(question)

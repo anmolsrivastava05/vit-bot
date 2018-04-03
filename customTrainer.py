@@ -6,7 +6,6 @@ from chatterbot.trainers import ListTrainer
 from chatterbot import ChatBot
 chatterbot = ChatBot("Training our VIT Bot with some tests.")
 chatterbot.set_trainer(ListTrainer)
-
 chatterbot.train([
     "Hey",
     "Hello! How may I help you?",
@@ -18,7 +17,7 @@ chatterbot.train([
 ])
 
 chatterbot.train([
-    "Tell something about VIT?",
+    "Can you please tell me about VIT?",
     "VIT was established with the aim of providing quality higher education on par with international standards. It persistently seeks and adopts innovative methods to improve the quality of higher education on a consistent basis.The campus has a cosmopolitan atmosphere with students from all corners of the globe. Experienced and learned teachers are strongly encouraged to nurture the students. The global standards set at VIT in the field of teaching and research spur us on in our relentless pursuit of excellence. In fact, it has become a way of life for us. The highly motivated youngsters on the campus are a constant source of pride. Our Memoranda of Understanding with various international universities are our major strength. They provide for an exchange of students and faculty and encourage joint research projects for the mutual benefit of these universities. Many of our students, who pursue their research projects in foreign universities, bring high quality to their work and esteem to India and have done us proud. With steady steps, we continue our march forward. We look forward to meeting you here at VIT.",
 ])
 
