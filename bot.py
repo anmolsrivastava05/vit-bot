@@ -15,13 +15,14 @@ from chatterbot.trainers import ListTrainer
 chatterbot = ChatBot("Training chatbot")
 chatterbot.set_trainer(ListTrainer)
 
-question = ''
-# Get a response to an input statement
-while(question.lower()!="bye"):
-	#Ask a question
-	question = raw_input('You: ')
-	response = chatbot.get_response(question)
-	'''
-	Print the response based upon the training
-	'''
-	print name + ': ' + str(response)
+def startBot():
+	question = ''
+	# Get a response to an input statement
+	while(question.lower()!="bye"):
+		#Ask a question
+		question = raw_input('You: ')
+		response = chatbot.get_response(question)
+		'''
+		Print the response based upon the training
+		'''
+		print name + ': ' + str(response)
